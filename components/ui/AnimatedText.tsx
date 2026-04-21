@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 interface AnimatedTextProps {
   text: string;
   className?: string;
-  el?: keyof JSX.IntrinsicElements;
+  el?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span" | "div";
   animation?: "word" | "char";
   delay?: number;
 }
