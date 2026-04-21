@@ -1,0 +1,82 @@
+﻿
+> nexcore@0.1.0 build
+> next build
+
+  Γû▓ Next.js 14.2.35
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully
+   Linting and checking validity of types ...
+node.exe : Failed to compile.
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" "C:\Use
+rs\dell\AppData\Roaming\n ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo          : 
+    NotSpecified: (Failed to  
+   compile.:String) [], Rem   
+ oteException
+    + FullyQualifiedErrorId : 
+    NativeCommandError
+ 
+
+./components/ui/MagneticButton
+.tsx:36:6
+Type error: Type '{ children: 
+Element; disabled?: boolean | 
+undefined; form?: string | 
+undefined; formAction?: 
+string | ((formData: 
+FormData) => void | 
+Promise<void>) | undefined; 
+... 285 more ...; className: 
+string; }' is not assignable 
+to type 'Omit<HTMLMotionProps<
+"button">, "ref">'.
+  Types of property 
+'onAnimationStart' are 
+incompatible.
+    Type 'AnimationEventHandle
+r<HTMLButtonElement> | 
+undefined' is not assignable 
+to type '((definition: 
+AnimationDefinition) => void) 
+| undefined'.
+      Type 'AnimationEventHand
+ler<HTMLButtonElement>' is 
+not assignable to type 
+'(definition: 
+AnimationDefinition) => void'.
+        Types of parameters 
+'event' and 'definition' are 
+incompatible.
+          Type 
+'AnimationDefinition' is not 
+assignable to type 'AnimationE
+vent<HTMLButtonElement>'.
+            Type 'string' is 
+not assignable to type 'Animat
+ionEvent<HTMLButtonElement>'.
+
+[0m [90m 34 |[39m[0m
+[0m [90m 35 |[39m   
+[36mreturn[39m ([0m
+[0m[31m[1m>[22m[39m[90m 
+36 |[39m     [33m<[39m[33m
+motion[39m[33m.[39mbutton[
+0m
+[0m [90m    |[39m      
+[31m[1m^[22m[39m[0m
+[0m [90m 37 |[39m       
+ref[33m=[39m{ref}[0m
+[0m [90m 38 |[39m       onM
+ouseMove[33m=[39m{handleMous
+e}[0m
+[0m [90m 39 |[39m       onM
+ouseLeave[33m=[39m{reset}[0
+m
+Next.js build worker exited 
+with code: 1 and signal: null
